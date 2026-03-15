@@ -56,9 +56,7 @@ class NewsletterCreate(generics.CreateAPIView):
     queryset = Newsletter.objects.all()
     serializer_class = NewsletterSerializer
 
-"""
-Returns only approved articles.
-"""
 class ApprovedArticlesList(generics.ListAPIView):
+    """Returns only approved articles."""
     queryset = Article.objects.filter(approved=True)
     serializer_class = ArticleSerializer
