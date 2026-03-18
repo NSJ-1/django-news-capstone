@@ -24,6 +24,9 @@ This project is a Django REST API for managing news articles and newsletters.
 Windows:
 python -m venv venv
 
+macOS/Linux:
+python3 -m venv venv
+
 ### 2. Activate the virtual environment
 
 Windows:
